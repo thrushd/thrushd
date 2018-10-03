@@ -1,11 +1,12 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+from datetime import datetime
 
 # setup
 AUTHOR = 'Dylan Thrush'
 SITENAME = 'Dylan Thrush'
-SITEURL = 'https://www.dylanthrush.com'
+SITEURL = 'http://localhost:8000'
 PATH = 'content'
 TIMEZONE = 'America/Los_Angeles'
 DEFAULT_LANG = 'en'
@@ -29,7 +30,8 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
+COPYRIGHT_YEAR = datetime.now().year
 DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
-RELATIVE_URLS = True
+# RELATIVE_URLS = True
