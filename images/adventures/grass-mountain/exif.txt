@@ -1,0 +1,8 @@
+grass-mountain-1.jpg: exif
+grass-mountain-2.jpg: exif
+grass-mountain-3.jpg: exif
+grass-mountain-4.jpg: exif
+grass-mountain-5.jpg: exif
+grass-mountain-6.jpg: exif
+grass-mountain-7.jpg: exif
+grass-mountain-8.jpg: exif

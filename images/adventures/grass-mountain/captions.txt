@@ -1,0 +1,8 @@
+grass-mountain-1.jpg: caption
+grass-mountain-2.jpg: caption
+grass-mountain-3.jpg: caption
+grass-mountain-4.jpg: caption
+grass-mountain-5.jpg: caption
+grass-mountain-6.jpg: caption
+grass-mountain-7.jpg: caption
+grass-mountain-8.jpg: caption
