@@ -10,8 +10,8 @@ I was inspired by [this](https://github.com/chrislgarry/Apollo-11) repository an
 
 ---
 
-![Autumn Rocket](https://github.com/thrushd/Apollo-Source-Code-Visual/blob/master/output/saturn-v-autumn.png)
+![Autumn Rocket](https://raw.githubusercontent.com/thrushd/Apollo-Source-Code-Visual/master/output/saturn-v-autumn.png)
 
 ---
 
-![Earth Rocket](https://github.com/thrushd/Apollo-Source-Code-Visual/blob/master/output/saturn-v-gist_earth.png)
+![Earth Rocket](https://raw.githubusercontent.com/thrushd/Apollo-Source-Code-Visual/master/output/saturn-v-gist_earth.png)
