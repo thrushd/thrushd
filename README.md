@@ -13,5 +13,4 @@ I added some custom colors to make it feel more like my own. For that I copied t
 3. Check for warnings and missing files
 4. Run `start pelserve.bat`. Navigate to [http://localhost:8000](http://localhost:8000) and preview all the new content
 5. Correct errors as needed
-6. Publish new content with `start pelpub.bat`
-7. Push new content to github with `start ghdeploy.bat`
+6 . Push new content to github with `start ghdeploy.bat`
