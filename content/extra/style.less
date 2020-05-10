@@ -1,0 +1,138 @@
+// Flex colors
+@orange: #D9411E;
+@light-orange: #FF5A09;
+@white:  #ffffff;
+@grey: #333333;
+@light-grey:  #eeeeee;
+@med-grey:  #999999;
+@dark-grey: #242121;
+
+// my colors
+@blue: #177E89;
+@light-blue: #FF5A09;
+
+// Font family
+@sans: 'Source Sans Pro', 'Roboto', 'Open Sans', 'Liberation Sans', 'DejaVu Sans', 'Verdana', 'Helvetica', 'Arial', sans-serif;
+@mono: 'Source Code Pro', 'Consolas', 'Liberation Mono', 'DejaVu Sans Mono', monospace;
+
+// Body
+@body-bg: @white;
+@text-color: @dark-grey;
+
+// Links
+@link-color: @blue;
+@link-hover-color: @light-blue;
+
+// Sidebar (aside)
+@sidebar-bg: @grey;
+@sidebar-text-color: @white;
+@sidebar-link-color: @white;
+@sidebar-link-hover-color: @light-grey;
+
+// Buttons
+@btn-bg: @blue;
+@btn-text-color: @white;
+@btn-hover-color: @light-blue;
+
+// Tag cloud
+@tag-bg: @blue;
+@tag-text-color: @white;
+@tag-hover-color: @light-blue;
+
+// Header
+@header-text-color: @med-grey;
+
+// Footer
+@footer-text-color: @med-grey;
+@footer-border-color: @light-grey;
+
+// Relativer posts
+@rel-post-border-color: @light-grey;
+
+// Nav
+@nav-border-color: @light-grey;
+
+
+// Styles
+body {
+  color: @text-color;
+}
+
+a {
+  color: @link-color;
+}
+
+a:hover {
+  color: @link-hover-color;
+}
+
+hr {
+  color: @light-grey;
+  background-color: @light-grey;
+}
+
+aside {
+  background-color: @sidebar-bg;
+  color: @sidebar-text-color;
+
+  a {
+    color: @sidebar-link-color;
+  }
+
+  a:hover {
+    color: @sidebar-link-hover-color;
+  }
+}
+
+main {
+  nav {
+    border-bottom: @nav-border-color 1px solid;
+  }
+
+  nav, .translations {
+    a {
+      border-left: @nav-border-color 1px solid;
+      border-right: @nav-border-color 1px solid;
+    }
+  }
+
+
+  article {
+      p {
+        color: @header-text-color;
+      }
+  }
+
+  footer {
+    border-top: @footer-border-color 1px solid;
+
+    p {
+      color: @footer-text-color;
+    }
+  }
+}
+
+.tag-cloud {
+  a {
+    background-color: @tag-bg;
+    color: @tag-text-color;
+  }
+
+  a:hover {
+    background-color: @tag-hover-color;
+  }
+}
+
+a.btn {
+  background-color: @btn-bg;
+  color: @btn-text-color;
+}
+
+a.btn:hover {
+  background-color: @btn-hover-color;
+}
+
+div.related-posts {
+  border-top: @rel-post-border-color 1px solid;
+  border-bottom: @rel-post-border-color 1px solid;
+}

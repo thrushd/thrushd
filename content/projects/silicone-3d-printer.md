@@ -3,8 +3,9 @@ Date: 2019-07-03
 Modified: 2019-07-03
 Author: Dylan Thrush
 Category: projects
+Summary: This is a project I assisted with as an undergraduate researcher in [mLab](https://www.mlabrobotics.com/) at OSU. I contributed all of the mechanical design...
 
-![printer-1]({filename}/images/projects/silicone-printer-1.jpg)
+![printer-1]({static}/images/projects/silicone-printer-1.jpg)
 
 ---
 
@@ -12,11 +13,11 @@ This is a project I assisted with as an undergraduate researcher in [mLab](https
 
 [Github](https://github.com/matscisteph/Silicone-3D-Printer)
 
-[Zero-Support 3D Printing of Thermoset Silicone Via Simultaneous Control of Both Reaction Kinetics and Transient Rheology]({filename}/extra/3dp.2018.0117.pdf)
+[Zero-Support 3D Printing of Thermoset Silicone Via Simultaneous Control of Both Reaction Kinetics and Transient Rheology]({static}/extra/3dp.2018.0117.pdf)
 
-[Supplemental Materials]({filename}/extra/3D Printing Additive Manufacturing Submission_SWalker_V4_Supplemental.pdf)
+[Supplemental Materials]({static}/extra/3D Printing Additive Manufacturing Submission_SWalker_V4_Supplemental.pdf)
 
-[Video Overview]({filename}/extra/SiliconePrint_KineticsRheology_WalkerEtAl_May2018.mp4)
+[Video Overview]({static}/extra/SiliconePrint_KineticsRheology_WalkerEtAl_May2018.mp4)
 
 
-![printer-2]({filename}/images/projects/silicone-printer-2.jpg)
+![printer-2]({static}/images/projects/silicone-printer-2.jpg)

@@ -19,41 +19,36 @@ SITELOGO = '/extra/bird-logo.png'
 FAVICON = '/extra/favicon.ico'
 SITETITLE = 'Dylan Thrush'
 MAIN_MENU = True
-MENUITEMS = (('adventure', '/category/adventure.html'), ('projects', '/category/projects.html'))
+MENUITEMS = (('projects', '/category/projects.html'),
+             ('adventure', '/category/adventure.html'))
+
+SOCIAL = [('github', 'https://github.com/thrushd')]
 
 STATIC_PATHS = [
     'images',
     'extra',
 ]
 
+# tell it where it is
+EXTRA_PATH_METADATA = {
+    "extra/custom.css": {"path": "static/custom.css"},
+}
+
+CUSTOM_CSS = "static/custom.css"
 
 # plugins
-PLUGIN_PATH = '../pelican-plugins'
-# PLUGINS = ['photos']
+PLUGIN_PATHS = ['../pelican-plugins']
 
-
-# photos config
-# PHOTO_LIBRARY = '/images/'
-# PHOTO_GALLERY = (1024, 768, 80)
-# PHOTO_ARTICLE = (760, 506, 80)
-# PHOTO_THUMB = (192, 144, 60)
-# PHOTO_SQUARE_THUMB = True
-# PHOTO_WATERMARK = False
-# PHOTO_EXIF_KEEP = False
-
-
-# feed generation is super lame
+# feed generation is super lame and I hate it
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-
 # Blogroll
 COPYRIGHT_YEAR = datetime.now().year
 DEFAULT_PAGINATION = 10
-
 
 # development
 RELATIVE_URLS = True

@@ -19,22 +19,22 @@ A truly gorgeous hike through 51 acres of BLM protected old growth. Although get
 I planned to record the whole route leaving the trailhead, but got sidetracked so it's incomplete. Should help a little bit with navigation, as google maps will mislead you (I know from experience).
 
 ### Pictures
-![]({filename}/images/adventures/valley-of-the-giants/valley-of-the-giants-1.jpg)
+![]({static}/images/adventures/valley-of-the-giants/valley-of-the-giants-1.jpg)
 
-![]({filename}/images/adventures/valley-of-the-giants/valley-of-the-giants-2.jpg)
+![]({static}/images/adventures/valley-of-the-giants/valley-of-the-giants-2.jpg)
 
-![]({filename}/images/adventures/valley-of-the-giants/valley-of-the-giants-3.jpg)
+![]({static}/images/adventures/valley-of-the-giants/valley-of-the-giants-3.jpg)
 
-![]({filename}/images/adventures/valley-of-the-giants/valley-of-the-giants-4.jpg)
+![]({static}/images/adventures/valley-of-the-giants/valley-of-the-giants-4.jpg)
 
-![]({filename}/images/adventures/valley-of-the-giants/valley-of-the-giants-5.jpg)
+![]({static}/images/adventures/valley-of-the-giants/valley-of-the-giants-5.jpg)
 
-![]({filename}/images/adventures/valley-of-the-giants/valley-of-the-giants-6.jpg)
+![]({static}/images/adventures/valley-of-the-giants/valley-of-the-giants-6.jpg)
 
-![]({filename}/images/adventures/valley-of-the-giants/valley-of-the-giants-7.jpg)
+![]({static}/images/adventures/valley-of-the-giants/valley-of-the-giants-7.jpg)
 
-![]({filename}/images/adventures/valley-of-the-giants/valley-of-the-giants-8.jpg)
+![]({static}/images/adventures/valley-of-the-giants/valley-of-the-giants-8.jpg)
 
-![]({filename}/images/adventures/valley-of-the-giants/valley-of-the-giants-9.jpg)
+![]({static}/images/adventures/valley-of-the-giants/valley-of-the-giants-9.jpg)
 
-![]({filename}/images/adventures/valley-of-the-giants/valley-of-the-giants-10.jpg)
+![]({static}/images/adventures/valley-of-the-giants/valley-of-the-giants-10.jpg)

@@ -17,18 +17,18 @@ A nice day hike for the 'off the beaten path' crowd. Takes about 1/2hr to get to
 ### [Map](https://drive.google.com/open?id=1oAxfufrBdx53EcPgyHpEhjAWnevremaI&usp=sharing)
 
 ### Pictures
-![]({filename}/images/adventures/grass-mountain/grass-mountain-1.jpg)
+![]({static}/images/adventures/grass-mountain/grass-mountain-1.jpg)
 
-![]({filename}/images/adventures/grass-mountain/grass-mountain-2.jpg)
+![]({static}/images/adventures/grass-mountain/grass-mountain-2.jpg)
 
-![]({filename}/images/adventures/grass-mountain/grass-mountain-3.jpg)
+![]({static}/images/adventures/grass-mountain/grass-mountain-3.jpg)
 
-![]({filename}/images/adventures/grass-mountain/grass-mountain-4.jpg)
+![]({static}/images/adventures/grass-mountain/grass-mountain-4.jpg)
 
-![]({filename}/images/adventures/grass-mountain/grass-mountain-5.jpg)
+![]({static}/images/adventures/grass-mountain/grass-mountain-5.jpg)
 
-![]({filename}/images/adventures/grass-mountain/grass-mountain-6.jpg)
+![]({static}/images/adventures/grass-mountain/grass-mountain-6.jpg)
 
-![]({filename}/images/adventures/grass-mountain/grass-mountain-7.jpg)
+![]({static}/images/adventures/grass-mountain/grass-mountain-7.jpg)
 
-![]({filename}/images/adventures/grass-mountain/grass-mountain-8.jpg)
+![]({static}/images/adventures/grass-mountain/grass-mountain-8.jpg)
