@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://www.dylanthrush.com/theme/stylesheet/style.min.css">
+
+  <link rel="stylesheet" type="text/css" href="https://www.dylanthrush.com/theme/pygments/monokai.min.css">
+  <link rel="stylesheet" type="text/css" href="https://www.dylanthrush.com/theme/font-awesome/css/font-awesome.min.css">
+
+    <link href="https://www.dylanthrush.com/static/custom.css" rel="stylesheet">
+
+
+
+    <link rel="shortcut icon" href="/extra/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/extra/favicon.ico" type="image/x-icon">
+
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#333333">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#333333">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Microsoft EDGE -->
+    <meta name="msapplication-TileColor" content="#333333">
+
+<meta name="author" content="Dylan Thrush" />
+<meta name="description" content="A quick tutorial on making custom 3d printed full color topographic maps." />
+<meta name="keywords" content="">
+
+<meta property="og:site_name" content="Dylan Thrush"/>
+<meta property="og:title" content="3D Printed Topology Maps"/>
+<meta property="og:description" content="A quick tutorial on making custom 3d printed full color topographic maps."/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="https://www.dylanthrush.com/3d-printed-topology-maps.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2019-08-02 00:00:00-07:00"/>
+<meta property="article:modified_time" content="2019-08-02 00:00:00-07:00"/>
+<meta property="article:author" content="https://www.dylanthrush.com/author/dylan-thrush.html">
+<meta property="article:section" content="projects"/>
+<meta property="og:image" content="/extra/bird-logo.png">
+
+  <title>Dylan Thrush &ndash; 3D Printed Topology Maps</title>
+
+
+
+</head>
+
+<body>
+  <aside>
+    <div>
+      <a href="https://www.dylanthrush.com">
+        <img src="/extra/bird-logo.png" alt="Dylan Thrush" title="Dylan Thrush">
+      </a>
+      <h1><a href="https://www.dylanthrush.com">Dylan Thrush</a></h1>
+
+
+      <nav>
+        <ul class="list">
+          <li><a href="https://www.dylanthrush.com/pages/about.html#about">About</a></li>
+
+        </ul>
+      </nav>
+
+      <ul class="social">
+        <li><a class="sc-github" href="https://github.com/thrushd" target="_blank"><i class="fa fa-github"></i></a></li>
+      </ul>
+    </div>
+
+
+  </aside>
+  <main>
+
+    <nav>
+      <a href="https://www.dylanthrush.com">    Home
+</a>
+
+      <a href="/category/projects.html">projects</a>
+      <a href="/category/adventure.html">adventure</a>
+
+
+    </nav>
+
+<article class="single">
+  <header>
+      
+    <h1 id="3d-printed-topology-maps">3D Printed Topology Maps</h1>
+    <p>
+          Posted on Fri 02 August 2019 in <a href="https://www.dylanthrush.com/category/projects.html">projects</a>
+
+
+    </p>
+  </header>
+
+
+  <div>
+    <p><img alt="main" src="images/projects/3d-printed-topo-6.jpg"></p>
+<p>I have been wanting to make a full color topographic map for quite a few years now, ever since I ran across <a href="https://www.instructables.com/id/3D-Print-Your-Trek-in-color/">This</a> instructable. I had half heartedly attempted to follow those instructions, but ran into some issues with the required software. Recently I went on a few hikes with some family and wanted to give them something to remember it by, so I decided to finally follow through on this project.</p>
+<p>The above tutorial is a bit outdated, as some of the required tools are no longer available. The following process is what worked for me, however it is fairly lazy. Not all the tools are free and open source, so I apologize for that. I was going for speed and (again) laziness.</p>
+<h2>Tools</h2>
+<p>Version is what I used.</p>
+<ul>
+<li><a href="https://www.adobe.com/products/photoshop.html0">Photoshop</a> (CC 2019)</li>
+<li><a href="https://www.3d-map-generator.com/">3D Map Generator - Atlas</a> (v1.3)</li>
+<li><a href="https://qgis.org/en/site/">QGIS</a> (3.8)</li>
+</ul>
+<h2>Instructions</h2>
+<h3>1. Prepare Terrain</h3>
+<p>Follow the instructions in <a href="https://www.youtube.com/watch?v=Plcyi5KvCl8">this video</a> to get a document loaded in photoshop for your location of interest. Make sure the area you are capturing has large borders (since you will be cropping down). Do not generate terrain yet if you want to add recorded GPS tracks or custom textures. If you just want the default satellite view you can finish the Atlas tutorial and proceed to the export section.</p>
+<p><img alt="step-1" src="https://www.dylanthrush.com/images/projects/3d-printed-topo-1.png"></p>
+<h3>2. Modifying Textures</h3>
+<p>If you want to overlay custom textures on your model, such as recorded GPX tracks, you will need to do a little extra work. Start QGIS and then follow <a href="https://geogeek.xyz/how-to-add-google-maps-layers-in-qgis-3.html">this tutorial</a> to get the google satellite base layer imported. From there go to <code>Layer -&gt; Add Layer -&gt; Add Vector Layer...</code> (<code>CTRL+SHIFT+V</code>) and select your track files (mine were GPX). Once they are imported you can play with styling and scale to suit your needs. This is how mine ended up looking:</p>
+<p><img alt="step-2.1" src="https://www.dylanthrush.com/images/projects/3d-printed-topo-2.png"></p>
+<p>Once your base map and layers are styled you need to make a new layout: <code>Project -&gt; New Print Layout...</code> (<code>CTRL+P</code>). In the new window select <code>Add Item -&gt; Add Map...</code>. Right click on the background and select <code>Page Properties...</code>. Under <code>Size</code> select <code>Custom</code> and then enter the size you want your 3D print to be (I chose 150x150mm). Now select <code>Add Item -&gt; Add Map...</code>, click and drag from top left corner to bottom right. Once your map is placed you can position it with the <code>Move item content</code> on the left toolbar. Set the scale under <code>Item Properties</code> to adjust zoom. Set the export resolution to something reasonably high, I chose 600dpi, but it probably doesn't matter that much. Select <code>Layout -&gt; Export as Image...</code> and save as a PNG.</p>
+<p><img alt="step-2.2" src="https://www.dylanthrush.com/images/projects/3d-printed-topo-3.png"></p>
+<p>Head back over to photoshop and drop your export in. It will probably be scaled really small, but that's ok. Select both the screenshot and the QGIS export in the layers tab and then <code>right click -&gt; Rasterize Layers</code>. Next, select the topology layer and the screenshot layer and lock them. Now select the QGIS export and the screen shot, go to <code>Edit -&gt; Auto-align Layers</code> and leave everything as default. Your QGIS export should now be aligned on top of your screenshot from google maps. Photoshop will change the bounds of the image, but everything should still be aligned.</p>
+<p><img alt="step-2.3" src="https://www.dylanthrush.com/images/projects/3d-printed-topo-4.png"></p>
+<p>Next, unlock and delete the screenshot layer, then crop the image to the bounds of your QGIS export layer. Rename the QGIS image layer to <code>texture</code>. Finally, you can hit the magic <code>Create New Terrain</code> button in the Atlas toolbar.</p>
+<h3>3. Export</h3>
+<p>Once Atlas has processed your heightmaps and generated the model (mine took 15-20min) you can do things like play with saturation, relative heights, etc. Reference the Atlas tutorials for all the mods you can do. Once you are happy with the model expand the <code>3d_map_group</code> and select the <code>heightmap-ref-group</code> layer. Select <code>3D -&gt; 3D Print Settings...</code>, Set:</p>
+<ul>
+<li><code>Print to: Shapeways</code></li>
+<li><code>Printer: Sandstone - Full color</code></li>
+<li><code>Printer Units: Millimeters</code></li>
+<li><code>Scene Volume: Whatever size you want</code></li>
+</ul>
+<p>Now you are ready to hit the print icon (or <code>3D -&gt; 3D Print...</code>). This can also take a while to process, as it closes holes and thickens the walls. Once it finishes you can hit <code>Export</code> and your file will be saved in a .wrl file. This can be sent to any vendor that prints in full color sandstone, I used Shapeways to print a 150x150mm map, which cost about $70.</p>
+<h3>4. Mount</h3>
+<p>Hey look, a cool thingy! Mount it in something (I chose some scrap oak I had) and enjoy :)</p>
+<p><img alt="step-4.1" src="https://www.dylanthrush.com/images/projects/3d-printed-topo-6.jpg"></p>
+<p><img alt="step-4.2" src="https://www.dylanthrush.com/images/projects/3d-printed-topo-7.jpg"></p>
+<h2>Notes</h2>
+<ul>
+<li>The exported .wrl does not have a nice flat base, which can make mounting tricky. I tried messing with the mesh in blender, but decided to fix it mechanically instead by filling in the base with epoxy.</li>
+</ul>
+  </div>
+  <div class="tag-cloud">
+    <p>
+    </p>
+  </div>
+
+
+
+
+
+</article>
+
+    <footer>
+<p>&copy;  2020</p>
+<p>    Powered by <a href="http://getpelican.com" target="_blank">Pelican</a> - <a href="https://github.com/alexandrevicenzi/flex" target="_blank">Flex</a> theme by <a href="http://alexandrevicenzi.com" target="_blank">Alexandre Vicenzi</a>
+</p>    </footer>
+  </main>
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " Dylan Thrush ",
+  "url" : "https://www.dylanthrush.com",
+  "image": "/extra/bird-logo.png",
+  "description": ""
+}
+</script>
+
+
+
+</body>
+
+</html>

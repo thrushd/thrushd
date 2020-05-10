@@ -1,0 +1,58 @@
+body {
+ color: #242121;
+}
+a {
+ color: #177e89;
+}
+a:hover {
+ color: #ff5a09;
+}
+hr {
+ color: #eeeeee;
+ background-color: #eeeeee;
+}
+aside {
+ background-color: #333333;
+ color: #ffffff;
+}
+aside a {
+ color: #ffffff;
+}
+aside a:hover {
+ color: #eeeeee;
+}
+main nav {
+ border-bottom: #eeeeee 1px solid;
+}
+main nav a,
+main .translations a {
+ border-left: #eeeeee 1px solid;
+ border-right: #eeeeee 1px solid;
+}
+main article p {
+ color: #999999;
+}
+main footer {
+ border-top: #eeeeee 1px solid;
+}
+main footer p {
+ color: #999999;
+}
+.tag-cloud a {
+ background-color: #177e89;
+ color: #ffffff;
+}
+.tag-cloud a:hover {
+ background-color: #ff5a09;
+}
+a.btn {
+ background-color: #177e89;
+ color: #ffffff;
+}
+a.btn:hover {
+ background-color: #ff5a09;
+}
+div.related-posts {
+ border-top: #eeeeee 1px solid;
+ border-bottom: #eeeeee 1px solid;
+}
