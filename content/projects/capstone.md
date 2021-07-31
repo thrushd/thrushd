@@ -3,6 +3,7 @@ Date: 2018-07-25
 Modified: 2018-07-30
 Author: Dylan Thrush
 Category: projects
+Tags: robotics
 Summary: Details and pictures related to my senior capstone project.
 
 ![]({static}/images/projects/capstone-1.gif)

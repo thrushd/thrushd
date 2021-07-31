@@ -3,6 +3,7 @@ Date: 2019-07-03
 Modified: 2019-07-03
 Author: Dylan Thrush
 Category: projects
+Tags: 3d printing, research
 Summary: This is a project I assisted with as an undergraduate researcher in [mLab](https://www.mlabrobotics.com/) at OSU. I contributed all of the mechanical design...
 
 ![printer-1]({static}/images/projects/silicone-printer-1.jpg)

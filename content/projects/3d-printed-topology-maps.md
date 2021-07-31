@@ -3,65 +3,61 @@ Date: 2019-08-02
 Modified: 2019-08-02
 Author: Dylan Thrush
 Category: projects
+Tags: 3d printing, blender
 Summary: A quick tutorial on making custom 3d printed full color topographic maps.
 
-![main](images/projects/3d-printed-topo-6.jpg)
+![main](images/projects/3d-printed-topo-render.png)
 
-I have been wanting to make a full color topographic map for quite a few years now, ever since I ran across [This](https://www.instructables.com/id/3D-Print-Your-Trek-in-color/) instructable. I had half heartedly attempted to follow those instructions, but ran into some issues with the required software. Recently I went on a few hikes with some family and wanted to give them something to remember it by, so I decided to finally follow through on this project.
+I have been wanting to make a full color topographic map for quite a few years now, ever since I ran across [This](https://www.instructables.com/id/3D-Print-Your-Trek-in-color/) instructable. I had half heartedly attempted to follow those instructions, but ran into some issues with the required software and quickly gave up. Recently I went on a few hikes with some family and wanted to give them something to remember it by, so I decided to finally follow through on this project.
 
-The above tutorial is a bit outdated, as some of the required tools are no longer available. The following process is what worked for me, however it is fairly lazy. Not all the tools are free and open source, so I apologize for that. I was going for speed and (again) laziness.
+The above tutorial is a bit outdated, as some of the required tools are no longer available. The following process is what worked for me, and all the tools are free and open source!
 
-## Tools
-Version is what I used.
+# Instructions
 
-- [Photoshop](https://www.adobe.com/products/photoshop.html0) (CC 2019)
-- [3D Map Generator - Atlas](https://www.3d-map-generator.com/) (v1.3)
-- [QGIS](https://qgis.org/en/site/) (3.8)
+## 1. QGIS
+[Download](https://qgis.org/en/site/) and install QGIS.
 
-## Instructions
+### Add the basemap
+Add the [QuickMapServices](https://github.com/nextgis/quickmapservices) plugin. 
 
-### 1. Prepare Terrain
+Setting the basemap sets the style of your map, there are a bunch of options but here are some good ones:
 
-Follow the instructions in [this video](https://www.youtube.com/watch?v=Plcyi5KvCl8) to get a document loaded in photoshop for your location of interest. Make sure the area you are capturing has large borders (since you will be cropping down). Do not generate terrain yet if you want to add recorded GPS tracks or custom textures. If you just want the default satellite view you can finish the Atlas tutorial and proceed to the export section.
+[MapTiler Satellite](https://www.maptiler.com/)
 
-![step-1]({static}/images/projects/3d-printed-topo-1.png)
+Google Roadmap: `http://mt0.google.com/vt/lyrs=m&hl=en&x={x}&y={y}&z={z}`
 
-### 2. Modifying Textures
+Google Terrain: `http://mt0.google.com/vt/lyrs=p&hl=en&x={x}&y={y}&z={z}`
 
-If you want to overlay custom textures on your model, such as recorded GPX tracks, you will need to do a little extra work. Start QGIS and then follow [this tutorial](https://geogeek.xyz/how-to-add-google-maps-layers-in-qgis-3.html) to get the google satellite base layer imported. From there go to `Layer -> Add Layer -> Add Vector Layer...` (`CTRL+SHIFT+V`) and select your track files (mine were GPX). Once they are imported you can play with styling and scale to suit your needs. This is how mine ended up looking:
+Google Altered Roadmap: `http://mt0.google.com/vt/lyrs=r&hl=en&x={x}&y={y}&z={z}`
 
-![step-2.1]({static}/images/projects/3d-printed-topo-2.png)
+Google Satellite Only: `http://mt0.google.com/vt/lyrs=s&hl=en&x={x}&y={y}&z={z}`
 
-Once your base map and layers are styled you need to make a new layout: `Project -> New Print Layout...` (`CTRL+P`). In the new window select `Add Item -> Add Map...`. Right click on the background and select `Page Properties...`. Under `Size` select `Custom` and then enter the size you want your 3D print to be (I chose 150x150mm). Now select `Add Item -> Add Map...`, click and drag from top left corner to bottom right. Once your map is placed you can position it with the `Move item content` on the left toolbar. Set the scale under `Item Properties` to adjust zoom. Set the export resolution to something reasonably high, I chose 600dpi, but it probably doesn't matter that much. Select `Layout -> Export as Image...` and save as a PNG.
+Google Terrain Only: `http://mt0.google.com/vt/lyrs=t&hl=en&x={x}&y={y}&z={z}`
 
-![step-2.2]({static}/images/projects/3d-printed-topo-3.png)
+Google Hybrid: `http://mt0.google.com/vt/lyrs=y&hl=en&x={x}&y={y}&z={z}`
 
-Head back over to photoshop and drop your export in. It will probably be scaled really small, but that's ok. Select both the screenshot and the QGIS export in the layers tab and then `right click -> Rasterize Layers`. Next, select the topology layer and the screenshot layer and lock them. Now select the QGIS export and the screen shot, go to `Edit -> Auto-align Layers` and leave everything as default. Your QGIS export should now be aligned on top of your screenshot from google maps. Photoshop will change the bounds of the image, but everything should still be aligned.
+Open Topo: `https://tile.opentopomap.org/{z}/{x}/{y}.png`
 
-![step-2.3]({static}/images/projects/3d-printed-topo-4.png)
+Esri Topo: `https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}`
 
-Next, unlock and delete the screenshot layer, then crop the image to the bounds of your QGIS export layer. Rename the QGIS image layer to `texture`. Finally, you can hit the magic `Create New Terrain` button in the Atlas toolbar.
+Esri Satellite: `https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}`
 
-### 3. Export
+If things look gross or stretched you might need to select a different CRS, look [here](http://www.epsg-registry.org/). 
 
-Once Atlas has processed your heightmaps and generated the model (mine took 15-20min) you can do things like play with saturation, relative heights, etc. Reference the Atlas tutorials for all the mods you can do. Once you are happy with the model expand the `3d_map_group` and select the `heightmap-ref-group` layer. Select `3D -> 3D Print Settings...`, Set:
+### Add tracks, waypoints, other points of interest
+`Layer` → `Add Layer` → `Add Vector Layer...` (`CTRL+SHIFT+V`) and select the GPX file. Select the track and click `Add`. Double click on the new layer or right click and select `Properties...`. Adjust the line color and width under `Symbology`.
 
-- `Print to: Shapeways`
-- `Printer: Sandstone - Full color`
-- `Printer Units: Millimeters`
-- `Scene Volume: Whatever size you want`
+### Create print layout
+`CTRL+P` to add new print layout. Right click on background, select `Page Properties...`, adjust width and height. `Add Item` → `Add Map`. `Move item content` and adjust map bounds. `Layout` → `Export Image...` → save as PNG → adjust DPI (500 seems good enough) → check `Generate world file` → `Save`.
 
-Now you are ready to hit the print icon (or `3D -> 3D Print...`). This can also take a while to process, as it closes holes and thickens the walls. Once it finishes you can hit `Export` and your file will be saved in a .wrl file. This can be sent to any vendor that prints in full color sandstone, I used Shapeways to print a 150x150mm map, which cost about $70.
+## 2. Blender
+Download and install [Blender](https://www.blender.org/) and the [BlenderGIS add on](https://github.com/domlysz/BlenderGIS). 
 
-### 4. Mount
+Select all objects (`A`) and delete (`X`). `GIS` → `Import` → `Georeferenced raster` → select exported PNG. `GIS` → `Web geodata` → `Get SRTM`. Add a displacement modifier and the strength to 1/10000. Add a subdivision modifier to the plane for more resolution (can have weird Z warping sometimes). Default looks good but isn't verified, shouldn't need to go over 3 or 4. Apply both modifiers. Scale the model to XY size desired by copying the current X or Y dimension, highlighting all of the scale fields, typing the desired dimension and then divide by the current dimension. Edit the mesh to add thickness and walls. Check normals are correct and merge vertices. Export to collada, check `Copy` and `Only Selected Map` under `Texture Options`.
 
-Hey look, a cool thingy! Mount it in something (I chose some scrap oak I had) and enjoy :)
+## 3. Print
+Send the files out to your favorite print shop (shapeways can do full color sandstone, which is what I used here). Optionally mount it in something (I chose some scrap oak I had) and enjoy :)
 
 ![step-4.1]({static}/images/projects/3d-printed-topo-6.jpg)
 
 ![step-4.2]({static}/images/projects/3d-printed-topo-7.jpg)
-
-
-## Notes
-
-- The exported .wrl does not have a nice flat base, which can make mounting tricky. I tried messing with the mesh in blender, but decided to fix it mechanically instead by filling in the base with epoxy.

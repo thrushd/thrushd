@@ -3,6 +3,7 @@ Date: 2018-06-22
 Modified: 2018-07-20
 Author: Dylan Thrush
 Category: projects
+Tags: robotics
 Summary: For 5 of my 6 years in undergrad I participated in the [OSU Robotics Club Mars Rover Team](https://osurobotics.club/mars-rover/). This was one of the best decisions of my life and contributed almost as much to where I am today as all of my formal...
 
 ![]({static}/images/projects/rover-2018-54.jpg)
