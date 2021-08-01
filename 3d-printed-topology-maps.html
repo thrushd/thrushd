@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://www.dylanthrush.com/theme/stylesheet/style.min.css">
+
+
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
+          href="https://www.dylanthrush.com/theme/pygments/monokai.min.css">
+
+
+  <link rel="stylesheet" type="text/css" href="https://www.dylanthrush.com/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="https://www.dylanthrush.com/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="https://www.dylanthrush.com/theme/font-awesome/css/solid.css">
+
+    <link rel="stylesheet" type="text/css" href="https://www.dylanthrush.com/static/custom.css">
+
+
+
+    <link rel="shortcut icon" href="/extra/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/extra/favicon.ico" type="image/x-icon">
+
+  
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#333333">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#333333">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Microsoft EDGE -->
+    <meta name="msapplication-TileColor" content="#333333">
+
+ 
+
+<meta name="author" content="Dylan Thrush" />
+<meta name="description" content="A quick tutorial on making custom 3d printed full color topographic maps." />
+<meta name="keywords" content="3d printing, blender">
+
+
+  <meta property="og:site_name" content="Dylan Thrush"/>
+  <meta property="og:title" content="3D Printed Topology Maps"/>
+  <meta property="og:description" content="A quick tutorial on making custom 3d printed full color topographic maps."/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:url" content="https://www.dylanthrush.com/3d-printed-topology-maps.html"/>
+  <meta property="og:type" content="article"/>
+  <meta property="article:published_time" content="2019-08-02 00:00:00-07:00"/>
+  <meta property="article:modified_time" content="2019-08-02 00:00:00-07:00"/>
+  <meta property="article:author" content="https://www.dylanthrush.com/author/dylan-thrush.html">
+  <meta property="article:section" content="projects"/>
+  <meta property="article:tag" content="3d printing"/>
+  <meta property="article:tag" content="blender"/>
+  <meta property="og:image" content="/extra/bird-logo.png">
+
+  <title>Dylan Thrush &ndash; 3D Printed Topology Maps</title>
+
+</head>
+<body class="light-theme">
+  <aside>
+    <div>
+      <a href="https://www.dylanthrush.com/">
+        <img src="/extra/bird-logo.png" alt="Dylan Thrush" title="Dylan Thrush">
+      </a>
+
+      <h1>
+        <a href="https://www.dylanthrush.com/">Dylan Thrush</a>
+      </h1>
+
+
+
+      <nav>
+        <ul class="list">
+
+
+              <li>
+                <a target="_self"
+                   href="https://www.dylanthrush.com/pages/about.html#about">
+                  About
+                </a>
+              </li>
+
+            <li>
+              <a target="_self" href="https://mailhide.io/e/Qcpcib95" >Contact</a>
+            </li>
+        </ul>
+      </nav>
+
+      <ul class="social">
+          <li>
+            <a  class="sc-github" href="https://github.com/thrushd" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+      </ul>
+    </div>
+
+  </aside>
+  <main>
+
+    <nav>
+      <a href="https://www.dylanthrush.com/">Home</a>
+
+      <a href="/categories.html">Categories</a>
+      <a href="/tags.html">Tags</a>
+      <a href="/archives.html">Archives</a>
+
+
+    </nav>
+
+<article class="single">
+  <header>
+      
+    <h1 id="3d-printed-topology-maps">3D Printed Topology Maps</h1>
+    <p>
+      Posted on Fri 02 August 2019 in <a href="https://www.dylanthrush.com/category/projects.html">projects</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <p><img alt="main" src="images/projects/3d-printed-topo-render.png"></p>
+<p>I have been wanting to make a full color topographic map for quite a few years now, ever since I ran across <a href="https://www.instructables.com/id/3D-Print-Your-Trek-in-color/">This</a> instructable. I had half heartedly attempted to follow those instructions, but ran into some issues with the required software and quickly gave up. Recently I went on a few hikes with some family and wanted to give them something to remember it by, so I decided to finally follow through on this project.</p>
+<p>The above tutorial is a bit outdated, as some of the required tools are no longer available. The following process is what worked for me, and all the tools are free and open source!</p>
+<h1>Instructions</h1>
+<h2>1. QGIS</h2>
+<p><a href="https://qgis.org/en/site/">Download</a> and install QGIS.</p>
+<h3>Add the basemap</h3>
+<p>Add the <a href="https://github.com/nextgis/quickmapservices">QuickMapServices</a> plugin. </p>
+<p>Setting the basemap sets the style of your map, there are a bunch of options but here are some good ones:</p>
+<p><a href="https://www.maptiler.com/">MapTiler Satellite</a></p>
+<p>Google Roadmap: <code>http://mt0.google.com/vt/lyrs=m&amp;hl=en&amp;x={x}&amp;y={y}&amp;z={z}</code></p>
+<p>Google Terrain: <code>http://mt0.google.com/vt/lyrs=p&amp;hl=en&amp;x={x}&amp;y={y}&amp;z={z}</code></p>
+<p>Google Altered Roadmap: <code>http://mt0.google.com/vt/lyrs=r&amp;hl=en&amp;x={x}&amp;y={y}&amp;z={z}</code></p>
+<p>Google Satellite Only: <code>http://mt0.google.com/vt/lyrs=s&amp;hl=en&amp;x={x}&amp;y={y}&amp;z={z}</code></p>
+<p>Google Terrain Only: <code>http://mt0.google.com/vt/lyrs=t&amp;hl=en&amp;x={x}&amp;y={y}&amp;z={z}</code></p>
+<p>Google Hybrid: <code>http://mt0.google.com/vt/lyrs=y&amp;hl=en&amp;x={x}&amp;y={y}&amp;z={z}</code></p>
+<p>Open Topo: <code>https://tile.opentopomap.org/{z}/{x}/{y}.png</code></p>
+<p>Esri Topo: <code>https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}</code></p>
+<p>Esri Satellite: <code>https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}</code></p>
+<p>If things look gross or stretched you might need to select a different CRS, look <a href="http://www.epsg-registry.org/">here</a>. </p>
+<h3>Add tracks, waypoints, other points of interest</h3>
+<p><code>Layer</code> → <code>Add Layer</code> → <code>Add Vector Layer...</code> (<code>CTRL+SHIFT+V</code>) and select the GPX file. Select the track and click <code>Add</code>. Double click on the new layer or right click and select <code>Properties...</code>. Adjust the line color and width under <code>Symbology</code>.</p>
+<h3>Create print layout</h3>
+<p><code>CTRL+P</code> to add new print layout. Right click on background, select <code>Page Properties...</code>, adjust width and height. <code>Add Item</code> → <code>Add Map</code>. <code>Move item content</code> and adjust map bounds. <code>Layout</code> → <code>Export Image...</code> → save as PNG → adjust DPI (500 seems good enough) → check <code>Generate world file</code> → <code>Save</code>.</p>
+<h2>2. Blender</h2>
+<p>Download and install <a href="https://www.blender.org/">Blender</a> and the <a href="https://github.com/domlysz/BlenderGIS">BlenderGIS add on</a>. </p>
+<p>Select all objects (<code>A</code>) and delete (<code>X</code>). <code>GIS</code> → <code>Import</code> → <code>Georeferenced raster</code> → select exported PNG. <code>GIS</code> → <code>Web geodata</code> → <code>Get SRTM</code>. Add a displacement modifier and the strength to 1/10000. Add a subdivision modifier to the plane for more resolution (can have weird Z warping sometimes). Default looks good but isn't verified, shouldn't need to go over 3 or 4. Apply both modifiers. Scale the model to XY size desired by copying the current X or Y dimension, highlighting all of the scale fields, typing the desired dimension and then divide by the current dimension. Edit the mesh to add thickness and walls. Check normals are correct and merge vertices. Export to collada, check <code>Copy</code> and <code>Only Selected Map</code> under <code>Texture Options</code>.</p>
+<h2>3. Print</h2>
+<p>Send the files out to your favorite print shop (shapeways can do full color sandstone, which is what I used here). Optionally mount it in something (I chose some scrap oak I had) and enjoy :)</p>
+<p><img alt="step-4.1" src="https://www.dylanthrush.com/images/projects/3d-printed-topo-6.jpg"></p>
+<p><img alt="step-4.2" src="https://www.dylanthrush.com/images/projects/3d-printed-topo-7.jpg"></p>
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="https://www.dylanthrush.com/tag/3d-printing.html">3d printing</a>
+      <a href="https://www.dylanthrush.com/tag/blender.html">blender</a>
+    </p>
+  </div>
+
+
+
+
+
+</article>
+
+    <footer>
+<p>&copy; 2021 </p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p>    </footer>
+  </main>
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " Dylan Thrush ",
+  "url" : "https://www.dylanthrush.com",
+  "image": "/extra/bird-logo.png",
+  "description": ""
+}
+</script>
+
+</body>
+</html>
